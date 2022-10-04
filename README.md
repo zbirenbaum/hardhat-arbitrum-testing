@@ -7,7 +7,7 @@ export INFURA_API_KEY="your key here"
 
 ```shell
 yarn install
-npx run compile
+npm run compile
 npx hardhat node #Start the server
 npx hardhat run --network localhost scripts/deposit.js #Run the testing script
 ```
