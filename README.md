@@ -1,13 +1,13 @@
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
+# Setup
+Create a .env file in the root of the project with the following variables:
+```
+export ARBISCAN_KEY="your key here"
+export INFURA_API_KEY="your key here"
+```
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deposit.ts
+yarn install
+npx run compile
+npx hardhat node #Start the server
+npx hardhat run --network localhost scripts/deposit.js #Run the testing script
 ```
